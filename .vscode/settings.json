@@ -1,0 +1,17 @@
+{
+    "sqltools.connections": [
+        {
+            "name": "refidesk_local",
+            "driver": "SQLite",
+            "database": "C:/Users/rober/Projects/refidesk/app.db",
+            "connectionTimeout": 15
+        },
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "cookie_db",
+            "group": "mids",
+            "database": "${workspaceFolder:berkeley_mids}/Data_Structures_and_Algos/Unit_7/Cookie.sqlite"
+        }
+    ]
+}
