@@ -1,0 +1,59 @@
+--
+
+In this assignment, you will use the Cookie database, a hypothetical catalogue created for use by a set of libraries. This is available as a sqlite file, Cookie.sqlite, or you can build it from the sql statements in the Create_Cookie.sql file, which can be found below.
+
+Cookie.sqlite (attached)
+Create_Cookie.sql (attached)
+
+Within the database, there are several tables you should pay attention to:
+
+bib. This contains information about each book in the catalogue. Its attributes include:
+accno -- an “accession” or serial number (This is the primary key)
+title -- The title of the book
+loc -- Location of publication (where published)
+date -- Date of publication
+price -- Price of the book
+height -- Height of the book in centimeters
+
+pub. This contains information about publishers. It’s attributes include:
+pubid -- The publisher’s id number (This is the primary key)
+publisher -- Publisher name
+pcity -- Publisher city
+pstate -- Publisher state
+pzip -- Publisher zip code
+
+sub. This contains each subject category that can be assigned to books. It has just two attributes:
+subcode -- Subject identification number (This is the primary key)
+subject -- the subject heading/description
+
+index. This table allows many-to-many links between books and subject headings. It has just two attributes:
+subcode -- link to subject id
+accno -- link to book accession number
+
+
+Using this database, answer the following questions (and submit a .sql file as your solution with the answer and code placed in the format below)
+
+--1) What Publisher is located in GARDEN CITY? 
+-- Answer: PLACE HERE
+-- Code: INSERT BELOW THIS LINE
+
+--2) How many books in the catalogue come from publishers in NEW YORK? 
+-- Answer: PLACE HERE
+-- Code: INSERT BELOW THIS LINE
+
+--3) Find the average price of a book in the SOCIAL CHANGE subject category. 
+-- Answer: PLACE HERE
+-- Code: INSERT BELOW THIS LINE
+
+--4) How many books from SAN FRANCISCO publishers are about UNIVERSITIES AND COLLEGES? 
+-- Answer: PLACE HERE
+-- Code: INSERT BELOW THIS LINE
+
+--5) Books in which subject category have the highest price? 
+-- Answer: PLACE HERE
+-- Code: INSERT BELOW THIS LINE
+
+--6) Among books costing 15 US$ or more, which publisher ranks highest in terms of average book HEIGHT? 
+-- Answer: PLACE HERE
+-- Code: INSERT BELOW THIS LINE
+
